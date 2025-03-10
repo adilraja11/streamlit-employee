@@ -8,6 +8,12 @@ class Employee:
         self.department = department
         self.salary = salary
         self.on_leave = False
+
+    def go_on_leave(self):
+        self.on_leave = True
+    
+    def return_from_leave(self):
+        self.on_leave = False
     
     def __repr__(self):
         return f"Employee: {self.id} {self.full_name} {self.role} {self.department} {self.salary} {self.status} {self.on_leave}"
